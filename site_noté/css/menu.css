@@ -1,0 +1,59 @@
+
+img{
+height: 100px;/*hauteur de l'image*/
+width:100px; /*largeur de l'image*/
+}
+
+section{
+    width:100%;
+    margin-top:10px;/*marges exterieures hautes*/
+    margin-bottom:10px;/*marges exterieurs basses*/
+    float:left;
+    border-radius:30px;
+    
+}
+
+h2 {
+    color:#d49625;/*couleur du titre*/
+
+}
+
+p {
+    text-align:center;
+    color:#333333;
+    font-size:20px;
+    
+}
+
+.debut {
+    margin-top:10px;
+}
+/*classe de la balise de la phrase d'introduction de la page*/
+table {
+    display: inline-table; 
+    border-collapse: collapse;
+    
+}
+
+/*tableau*/
+td {
+    display:block ;
+   float: left;
+   font-size: 20px;
+   
+}
+.soft {
+    margin-left:25px;
+}
+.alcool {
+   margin-left: px;
+}
+/*cellules du tableau*/
+body {
+    font-family:Arial;
+    color:#333333;
+    background-color: #ededed;
+    text-align:center;
+     
+}   
+/*corps de la page*/

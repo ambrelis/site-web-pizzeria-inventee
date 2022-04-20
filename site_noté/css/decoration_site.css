@@ -1,0 +1,49 @@
+/*
+#962d21 bannière
+#df4937 barre recherche / accentuation
+#ededed section
+#333333 textes, etc.
+#d49625 titre
+*/
+
+section{
+    width:100%;
+    margin-top:10px; /*marges exterieures hautes*/
+    margin-bottom:10px;/*marges exterieures basses*/
+    float:left;
+    border-radius:30px;
+    text-align:center
+}
+
+p {
+    width:90%;/*largeur*/
+    margin:1% 5%; /*marges exterieures*/
+    float:left;
+    color:#333333;
+    font-size:20px; /*taille du texte*/
+    text-align:center/*alignement du texte au centre*/
+}
+h2 {
+    color:#d49625;/*couleur du titre*/
+}
+
+body {
+    font-family:Arial;
+    color:#333333;
+    background-color: #ededed;
+    text-align:center;
+    float:left;
+   
+}   
+.informations {
+    color :#333333;
+    text-decoration: none;
+}
+.presentation{
+    width: 50%; /*largeur*/
+    height: 10% /*hauteur*/
+    
+   /* position: relative;*/
+    /*position=définit la façon dont un élément est positionné dans un document*/
+
+}

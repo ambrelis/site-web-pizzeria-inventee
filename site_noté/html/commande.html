@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+        <head><!--fournit des informations générales (métadonnées) sur le document  -->
+                <title>Il Pizzaiolo</title>
+                <!--titre du document (qui est affiché dans la barre de titre du navigateur ou dans l'onglet de la page)-->
+                <meta charset="UTF-8" />
+                <!--inclusion des caractères spéciaux dans le document html-->
+                <link rel="stylesheet" href="../css/commande.css" />
+                <link rel="stylesheet"  href="../css/theme.css" /><!--fichier theme commun a toutes les pages html-->
+                <!--inclusion du fichier css dans le fichier html-->
+
+        </head>
+        <body><!--contenu principal du document/corps de la page-->
+                <header><!--en-tete de la page-->
+                        <h1>Commande</h1><!--titre de taille 1 -->
+                        <img class="logo" src="../images/Commander/logo.png" alt="logo du site" />
+                        <!--logo du site-->
+                <nav ><!--permet l'insertion de liens qu'ils soient externes ou internes à la page-->
+                        <!--utilisation de liste à puces-->
+                        <ul><!-- menu de navigation de la page-->
+                                <li ><a href="../html/index.html">Accueil</a></li>
+                                <!--a =permet de créer des liens vers des ressources externes-->
+                                <li ><a href="../html/menu.html">Carte</a></li>
+                                <li ><a href="../html/commande.html">Commander</a></li>
+                        </ul>
+                </nav>
+                </header>
+               <section>
+                <div class=début>
+                        <!--div=balise de séparation de section-->
+                       <p> Si vous souhaitez commander en ligne veuillez remplir le formulaire ci-joint.
+                       Vous pouvez également nous joindre au : 03 68 85 02 00.
+                       Ou par mail, à l'adresse : Ilpizzaiolo@gmail.com</p>
+                       </br>
+                       <!--le numéro de téléphone est celui de la fac-->
+                </div>
+               </section>
+                <!--création du formulaire-->
+                <section>
+                <form method="POST" action="result.php">
+                        <!--form = balise de creation d'un formulaire-->
+                        <!--inclusion du fichier php dans le fichier html-->
+
+                        <!--informations sur le client-->
+                        <fieldset id="sec-identite">
+                          <legend>Contact</legend>
+                          <div>
+                                <label for="nom">Nom * :</label>
+                                <!--label=légende pour un objet d'une interface utilisateur-->
+                                <input type="text" id="nom" placeholder="Entrez votre nom"  required />
+                                <!--input=utilisé pour créer un contrôle interactif dans un formulaire web qui permet à l'utilisateur de saisir des donnée-->
+                        </div>
+                        
+                          <div>
+                                <label for="prenom">Prénom * :</label>
+                                <input type="text" id="prenom" placeholder="Entrez votre prenom"  required />
+                        </div>
+                        
+                        <div>
+                             <label for="sexe">Sexe  :</label>
+                             <input class=sexe type="radio" name="sexe" value="homme" /> Homme
+                             <input class=sexe type="radio" name="sexe" value="femme" /> Femme
+                               
+                        </div> 
+                        
+                        <div>
+                            <label for="email">Email * :</label>
+                            <input type="email" id="email" placeholder="me@gmail.com"   required />
+                        </div>
+                        
+                        <div>
+                                <label for="telephone">Téléphone * :</label>
+                                <input type="tel" id="phone"   required />
+                        </div>
+                        </fieldset>
+
+                        <br/>
+
+                        <!--commande du client-->
+                        <fieldset id="sec-produit">
+                                <!--fieldset=utilisé afin de regrouper plusieurs contrôles interactifs ainsi que des étiquettes (<label>) dans un formulaire web-->
+                          <legend>Votre commande</legend>
+                          <div >
+                                <label for="livraison">Mode de livraison * :</label>
+                                <select name="livraison">
+                                       <!-- fournit une liste d'options parmi lesquelles l'utilisateur pourra choisir.--> 
+                                        <option value="error">Choix de la livraison</option>
+                                        <optgroup label="Mode de livraison">
+                                                <!--optgroup=permet de regrouper des infos dans une liste déroulante-->
+                                                <option value="a emporter">A emporter</option>
+                                                <option value="a domicile">Livraison à domicile</option>
+
+                                                
+                                        </optgroup>
+                                       
+                                </select>
+                        </div>
+                        
+                        <div>
+                                <label for="pizza">Votre Pizza * :</label>
+                                <select name="pizza">
+                                        <option value="error">Choix de la Pizza</option>
+                                        <optgroup >
+                                                <option value="barbecue">Barbecue</option>
+                                                <option value="vegetarienne">Végétarienne</option>
+                                                <option value="romana">Romana</option>
+                                                <option value="marguerite">Marguerite</option>
+                                                <option value="chorizo">Chorizo</option>
+                                                <option value="chevre chaud">Chèvre Chaud</option>
+                                                <option value="poulet">Poulet</option>
+                                                <option value="4 fromages">4 fromages</option>
+                                                <option value="pizza du chef">Pizza du Chef</option>
+                                        </optgroup>
+                                       
+                                </select>
+                        </div>
+
+                        <div>
+                                <label for="date">choisir une date * :</label>
+                                <input type="date" id="date" name="date" value="2021-01-01"  min="2021-01-01" max="2040-12-31" required>
+                        </div>
+
+                        <div>
+                                <label for="horaire">choisir un horaire * :</label>
+                                <input type="text" id="horaire" name="horaire" required >
+                        <div>
+                                <label for="boisson">Votre boisson * :</label>
+                                <select name="boisson">
+                                        <option value="error">Choix de la boisson</option>
+                                        <optgroup label="Soft">
+                                                <option value="ice tea">Ice tea 0,33 l</option>
+                                                <option value="coca">Coca 1,25 l</option>
+                                                <option value="coca">Coca 0,33 l</option>
+                                                <option value="sprite">sprite 0,33 l</option>
+                                                <option value="Orangina">Orangina 0,33 l</option>
+                                                <option value="Perrier">Perrier 0,33 l</option>
+                                        </optgroup>
+                                        <optgroup label="Alcool">
+                                                <option value="biere">Bière 0,25 l</option>
+                                                <option value="desperados">Desperados 0,50 l</option>
+                                                <option value="vin rouge italien">Vin rouge Italien 0,75 l</option>
+                                                <option value="lambrusco">Lambrusco 0,75 l</option>
+                                                <option value="rose de provence">Rosé de Provence 0,75 l</option>
+                                        </optgroup>
+                                </select>
+                        </div>
+                       
+                        <div>
+                              <label for="description">Commentaire :</label>
+                              <textarea id="textareac"></textarea>
+                              <!--textarea=permet d'déditer du texte sur plusieurs lignes -->
+                        </div>
+                        </fieldset>
+
+                        <br/>
+
+                        <!--adresse du client-->
+                        <fieldset id="sec-commande">
+                                <legend>Adresse de livraison</legend>
+                                <div>
+                                  <label for="adresse" >Adresse *  :</label>
+                                  <input type="text" id="adresse" placeholder="Entrez votre adresse"  required  />
+                                </div>
+                                
+                                <div>
+                                  <label for="ville">Ville * :</label>
+                                  <input type="text" id="ville"  placeholder="Entrez le nom de la ville"  required />
+                                </div>
+                                
+                                <div>
+                                        <label for="code postal">Code Postal * :</label>
+                                        <input type="text" id="ville" placeholder="Entrez le code postal"  required  />
+                                </div>
+                        <br/>
+                        </fieldset>
+                        <br/>
+                </form>
+                </section>
+                <section>
+                <div class=fin>
+                        <!--conditions generales d'utilisation-->
+                        
+                        <input class=gcu type="checkbox" name="cgu"  required /> <label class=gcu  for="conditions generales d'utilisation">J'accepte les  Conditions Générales d'utilisation*</label>
+                        <aside><nav><a href="../documents/cgu.pdf">cgu</a></nav></aside>
+                        <br/>
+                        <input class=offres type="checkbox" name="offres"  required/> <label class=offres for="recevoir des offres">J'accepte de recevoir des offres commerciales ou des informations sur la pizzeria par email*</label>
+                        <br/><br/>
+                        <aside>* champ obligatoire</aside>
+                        <!--aside=partie d'un document dont le contenu n'a qu'un rapport indirect avec le contenu principal du document-->
+                        <br/>
+                        <button><nav><a href=../html/valider.html>Commander</a></nav></button><br/><br/>
+                        <!--button=permet de créer un contrôle interactif ayant la forme d'un bouton et qui pourra être utilisé dans un formulaire ou dans le document.-->
+                      
+                </div>
+                </section>
+
+                <footer><!--pied de page-->
+                <br/> &copy Pizzeria Authentique El Pizzaiolo | 2020</br></br>
+                <!--insertion d'images-->
+                <img class="facebook" src="../images/Commander/facebook.png" alt="reseaux sociaux" />
+                <img class="instagram" src="../images/Commander/instagram.png" alt="reseaux sociaux" />
+                <img class="twitter" src="../images/Commander/twitter.png" alt="reseaux sociaux" />
+                </footer>
+        </body>
+
+       

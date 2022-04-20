@@ -1,0 +1,100 @@
+
+section{
+    width:100%;
+    margin-top:10px; /*marge exterieure  haute */
+    margin-bottom:10px;/*marge exterieur basse */
+    float:left;
+    border-radius:30px;/*bordures arrondis*/
+    text-align:center/*aligner texte au centre*/
+}
+
+p {
+    width:90%;/*largeur*/
+    margin:1% 5%; /*marges exterieures*/
+    float:left;
+    color:#333333;/*couleur du txt*/ 
+    font-size:20px;/*taille du texte*/
+    text-align:center
+}
+
+.debut {
+    margin-top: 10px;
+    text-align: center;
+}
+
+form {
+    padding-left:25%;/*marges intérieur gauches*/
+    padding-right: 25%;/*marges intérieur droites*/
+    width:50%;
+ }
+/* form =section d'un document qui contient des contrôles interactifs permettant à un utilisateur d'envoyer des données à un serveur web.*/
+
+fieldset {
+    padding:0 20px 20px 20px;/*marges intérieur*/
+    margin-bottom:10px;
+    width: 90%;
+    border:3px solid #df4937;  
+}
+/*fieldset=utilisé afin de regrouper plusieurs contrôles interactifs ainsi que des étiquettes (<label>) dans un formulaire web*/
+label {
+    padding-top: 15px;
+    display: inline-block;
+    width: 150px;
+    text-align:right;
+    
+}
+/*label=légende pour un objet d'une interface utilisateur*/
+
+optgroup {
+   display: block;
+    width: 150px;
+    float: right;
+ 
+}
+
+textarea {
+    margin-top: 15px;
+}
+
+aside {
+    font-size: x-small;
+}
+/* optgroup=utilisé dans un formulaire, permet de créer un groupe d'options parmi lesquelles on peut choisir dans un élément <select>.*/
+.fin {
+    text-align: center;
+    display: inline-block;
+}
+
+.gcu {
+    text-align: center;
+    display: inline;
+    width:40px;
+
+}
+
+.offres {
+    text-align: center;
+    display: inline;
+    width:40px;
+}
+.sexe {
+    width: 20px;
+    
+}
+input {
+    width: 150px;
+
+}
+
+button {
+    height:40px;
+    width: 100px;
+    font-size: 15px;
+}
+body {
+    font-family:Arial;/*style de police du texte*/
+    color:#333333;
+    background-color: #ededed;/*couleur de l'arrière fond*/
+    text-align:center;
+}   
+/*body=corps de la page*/
